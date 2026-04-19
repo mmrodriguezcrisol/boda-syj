@@ -51,7 +51,7 @@ export function Signature() {
 
         {/* Thank you message */}
         <motion.p
-          className="font-[family-name:var(--font-fraunces)] text-xl md:text-2xl text-[#F6F4EE]/80 italic"
+          className="font-[family-name:var(--font-fraunces)] text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-[#F6F4EE]/90 leading-tight"
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.3 }}
