@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next'
-import { Inter, Tangerine, Cormorant_SC } from 'next/font/google'
+import { Inter, Great_Vibes, Cormorant_SC } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
@@ -9,9 +9,9 @@ const inter = Inter({
   display: 'swap',
 })
 
-const fraunces = Tangerine({
+const fraunces = Great_Vibes({
   subsets: ['latin'],
-  weight: ['400', '700'],
+  weight: ['400'],
   variable: '--font-fraunces',
   display: 'swap',
 })
