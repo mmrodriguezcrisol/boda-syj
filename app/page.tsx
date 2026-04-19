@@ -12,7 +12,6 @@ import { PhotoBreak } from '@/components/wedding/PhotoBreak'
 import { DressCode } from '@/components/wedding/DressCode'
 import { RSVP } from '@/components/wedding/RSVP'
 import { Gifts } from '@/components/wedding/Gifts'
-import { PhotoGallery } from '@/components/wedding/PhotoGallery'
 import { Signature } from '@/components/wedding/Signature'
 import { ScrollProgress } from '@/components/wedding/ScrollProgress'
 import { DustParticles } from '@/components/wedding/DustParticles'
@@ -87,7 +86,6 @@ export default function WeddingPage() {
             <RSVP />
             <PhotoBreak imageIndex={2} overlay="rust" />
             <Gifts />
-            <PhotoGallery />
             <Signature />
           </motion.main>
         )}
