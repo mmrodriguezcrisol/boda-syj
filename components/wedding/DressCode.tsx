@@ -27,14 +27,14 @@ export function DressCode() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="font-[var(--font-cormorant-sc)] text-sm md:text-base tracking-[0.3em] text-[#8A9A7C] uppercase mb-4">
+          <h2 className="font-[family-name:var(--font-cormorant-sc)] text-sm md:text-base tracking-[0.3em] text-[#8A9A7C] uppercase mb-4">
             Código de Vestimenta
           </h2>
         </motion.div>
 
         {/* Main title */}
         <motion.h3
-          className="font-[var(--font-fraunces)] text-4xl md:text-5xl lg:text-6xl text-[#2D3D2E] mb-8"
+          className="font-[family-name:var(--font-fraunces)] text-4xl md:text-5xl lg:text-6xl text-[#2D3D2E] mb-8"
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.1 }}

@@ -31,14 +31,14 @@ export function RSVP() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="font-[var(--font-cormorant-sc)] text-sm md:text-base tracking-[0.3em] text-[#8A9A7C] uppercase mb-4">
+          <h2 className="font-[family-name:var(--font-cormorant-sc)] text-sm md:text-base tracking-[0.3em] text-[#8A9A7C] uppercase mb-4">
             Confirmá tu Asistencia
           </h2>
         </motion.div>
 
         {/* Main title */}
         <motion.h3
-          className="font-[var(--font-fraunces)] text-3xl md:text-4xl lg:text-5xl text-[#F6F4EE] mb-6"
+          className="font-[family-name:var(--font-fraunces)] text-3xl md:text-4xl lg:text-5xl text-[#F6F4EE] mb-6"
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.1 }}

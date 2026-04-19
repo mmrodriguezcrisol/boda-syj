@@ -31,7 +31,7 @@ export function Signature() {
 
         {/* Names */}
         <motion.h2
-          className="font-[var(--font-fraunces)] text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-[#F6F4EE] mb-4"
+          className="font-[family-name:var(--font-fraunces)] text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-[#F6F4EE] mb-4"
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.1 }}
@@ -41,7 +41,7 @@ export function Signature() {
 
         {/* Date */}
         <motion.p
-          className="font-[var(--font-cormorant-sc)] text-lg md:text-xl text-[#8A9A7C] tracking-[0.2em] mb-12"
+          className="font-[family-name:var(--font-cormorant-sc)] text-lg md:text-xl text-[#8A9A7C] tracking-[0.2em] mb-12"
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.2 }}
@@ -51,7 +51,7 @@ export function Signature() {
 
         {/* Thank you message */}
         <motion.p
-          className="font-[var(--font-fraunces)] text-xl md:text-2xl text-[#F6F4EE]/80 italic"
+          className="font-[family-name:var(--font-fraunces)] text-xl md:text-2xl text-[#F6F4EE]/80 italic"
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.3 }}

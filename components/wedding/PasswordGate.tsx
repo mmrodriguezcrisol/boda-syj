@@ -88,11 +88,11 @@ export function PasswordGate({ onUnlock }: PasswordGateProps) {
         transition={{ duration: 0.8, delay: 0.2 }}
       >
         {/* Monogram */}
-        <h1 className="font-[var(--font-fraunces)] text-4xl md:text-5xl text-[#2D3D2E] mb-2">
+        <h1 className="font-[family-name:var(--font-fraunces)] text-4xl md:text-5xl text-[#2D3D2E] mb-2">
           S <span className="text-[#A8533E]">&</span> J
         </h1>
         
-        <p className="font-[var(--font-cormorant-sc)] text-sm md:text-base text-[#8A9A7C] tracking-[0.2em] mb-12">
+        <p className="font-[family-name:var(--font-cormorant-sc)] text-sm md:text-base text-[#8A9A7C] tracking-[0.2em] mb-12">
           Nos Casamos
         </p>
 

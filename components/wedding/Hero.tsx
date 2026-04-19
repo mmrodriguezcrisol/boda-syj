@@ -47,7 +47,7 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <span className="font-[var(--font-cormorant-sc)] text-sm md:text-base tracking-[0.4em] text-[#F6F4EE] uppercase drop-shadow-[0_2px_6px_rgba(0,0,0,0.5)]">
+          <span className="font-[family-name:var(--font-cormorant-sc)] text-sm md:text-base tracking-[0.4em] text-[#F6F4EE] uppercase drop-shadow-[0_2px_6px_rgba(0,0,0,0.5)]">
             Save the Date
           </span>
         </motion.div>
@@ -59,20 +59,20 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.4 }}
         >
-          <span className="font-[var(--font-fraunces)] text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-[#F6F4EE] leading-tight block text-balance drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]">
+          <span className="font-[family-name:var(--font-fraunces)] text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-[#F6F4EE] leading-tight block text-balance drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]">
             Simón
           </span>
-          <span className="font-[var(--font-fraunces)] text-3xl sm:text-4xl md:text-5xl text-[#A8533E] my-2 md:my-4 block drop-shadow-[0_2px_8px_rgba(0,0,0,0.4)]">
+          <span className="font-[family-name:var(--font-fraunces)] text-3xl sm:text-4xl md:text-5xl text-[#A8533E] my-2 md:my-4 block drop-shadow-[0_2px_8px_rgba(0,0,0,0.4)]">
             &
           </span>
-          <span className="font-[var(--font-fraunces)] text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-[#F6F4EE] leading-tight block text-balance drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]">
+          <span className="font-[family-name:var(--font-fraunces)] text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-[#F6F4EE] leading-tight block text-balance drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]">
             Josefina
           </span>
         </motion.h1>
 
         {/* Date */}
         <motion.p
-          className="mt-8 md:mt-12 font-[var(--font-cormorant-sc)] text-xl md:text-2xl lg:text-3xl tracking-[0.2em] text-[#F6F4EE] drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]"
+          className="mt-8 md:mt-12 font-[family-name:var(--font-cormorant-sc)] text-xl md:text-2xl lg:text-3xl tracking-[0.2em] text-[#F6F4EE] drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.8 }}
@@ -92,7 +92,7 @@ export function Hero() {
             transition={{ duration: 1.5, repeat: Infinity, ease: 'easeInOut' }}
             className="flex flex-col items-center gap-2"
           >
-            <span className="font-[var(--font-cormorant-sc)] text-xs tracking-[0.2em] text-[#F6F4EE]/70 uppercase">
+            <span className="font-[family-name:var(--font-cormorant-sc)] text-xs tracking-[0.2em] text-[#F6F4EE]/70 uppercase">
               Deslizá
             </span>
             <ChevronDown className="w-6 h-6 text-[#F6F4EE]/70" />

@@ -92,11 +92,11 @@ export function Preloader({ onComplete }: PreloaderProps) {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 1 }}
       >
-        <h1 className="font-[var(--font-fraunces)] text-5xl md:text-6xl text-[#2D3D2E] tracking-wide">
+        <h1 className="font-[family-name:var(--font-fraunces)] text-5xl md:text-6xl text-[#2D3D2E] tracking-wide">
           S <span className="text-[#A8533E]">&</span> J
         </h1>
         <motion.p
-          className="font-[var(--font-cormorant-sc)] text-lg md:text-xl text-[#8A9A7C] mt-4 tracking-[0.3em]"
+          className="font-[family-name:var(--font-cormorant-sc)] text-lg md:text-xl text-[#8A9A7C] mt-4 tracking-[0.3em]"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 1.5 }}

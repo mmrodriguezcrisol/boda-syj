@@ -52,14 +52,14 @@ export function Gifts() {
           transition={{ duration: 0.6 }}
         >
           <Gift className="w-10 h-10 md:w-12 md:h-12 text-[#A8533E] mx-auto mb-4" />
-          <h2 className="font-[var(--font-cormorant-sc)] text-sm md:text-base tracking-[0.3em] text-[#8A9A7C] uppercase mb-4">
+          <h2 className="font-[family-name:var(--font-cormorant-sc)] text-sm md:text-base tracking-[0.3em] text-[#8A9A7C] uppercase mb-4">
             Regalos
           </h2>
         </motion.div>
 
         {/* Message */}
         <motion.p
-          className="font-[var(--font-fraunces)] text-xl md:text-2xl lg:text-3xl text-[#2D3D2E] leading-relaxed mb-10 max-w-2xl mx-auto text-pretty"
+          className="font-[family-name:var(--font-fraunces)] text-xl md:text-2xl lg:text-3xl text-[#2D3D2E] leading-relaxed mb-10 max-w-2xl mx-auto text-pretty"
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.1 }}
@@ -83,12 +83,12 @@ export function Gifts() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.3 }}
         >
-          <p className="text-sm text-[#8A9A7C] font-[var(--font-cormorant-sc)] tracking-widest uppercase mb-2">
+          <p className="text-sm text-[#8A9A7C] font-[family-name:var(--font-cormorant-sc)] tracking-widest uppercase mb-2">
             Alias
           </p>
           
           <div className="flex items-center justify-center gap-4">
-            <span className="font-[var(--font-fraunces)] text-2xl md:text-3xl text-[#2D3D2E]">
+            <span className="font-[family-name:var(--font-fraunces)] text-2xl md:text-3xl text-[#2D3D2E]">
               {ALIAS}
             </span>
             

@@ -80,10 +80,10 @@ export function PhotoGallery() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="font-[var(--font-cormorant-sc)] text-sm md:text-base tracking-[0.3em] text-[#8A9A7C] uppercase mb-4">
+          <h2 className="font-[family-name:var(--font-cormorant-sc)] text-sm md:text-base tracking-[0.3em] text-[#8A9A7C] uppercase mb-4">
             Galería
           </h2>
-          <p className="font-[var(--font-fraunces)] text-3xl md:text-4xl text-[#2D3D2E]">
+          <p className="font-[family-name:var(--font-fraunces)] text-3xl md:text-4xl text-[#2D3D2E]">
             Nuestra Historia
           </p>
         </motion.div>
@@ -173,7 +173,7 @@ export function PhotoGallery() {
 
               {/* Photo counter */}
               <div className="absolute bottom-4 left-1/2 -translate-x-1/2">
-                <span className="text-[#F6F4EE]/70 text-sm font-[var(--font-cormorant-sc)] tracking-widest">
+                <span className="text-[#F6F4EE]/70 text-sm font-[family-name:var(--font-cormorant-sc)] tracking-widest">
                   {selectedPhoto + 1} / {photos.length}
                 </span>
               </div>

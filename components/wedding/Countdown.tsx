@@ -68,16 +68,16 @@ export function Countdown() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="font-[var(--font-fraunces)] text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#2D3D2E] mb-2">
+          <h2 className="font-[family-name:var(--font-fraunces)] text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#2D3D2E] mb-2">
             21 y 22 de Mayo
           </h2>
-          <span className="font-[var(--font-cormorant-sc)] text-xl md:text-2xl text-[#A8533E] tracking-[0.3em]">
+          <span className="font-[family-name:var(--font-cormorant-sc)] text-xl md:text-2xl text-[#A8533E] tracking-[0.3em]">
             2026
           </span>
         </motion.div>
 
         <motion.h3
-          className="text-center font-[var(--font-cormorant-sc)] text-sm md:text-base tracking-[0.3em] text-[#8A9A7C] uppercase mb-12"
+          className="text-center font-[family-name:var(--font-cormorant-sc)] text-sm md:text-base tracking-[0.3em] text-[#8A9A7C] uppercase mb-12"
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.1 }}
@@ -98,7 +98,7 @@ export function Countdown() {
                 <div className="bg-white rounded-3xl p-6 md:p-8 shadow-sm border border-[#E8E6E0]">
                   <motion.span
                     key={unit.value}
-                    className="font-[var(--font-fraunces)] text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-[#2D3D2E] block"
+                    className="font-[family-name:var(--font-fraunces)] text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-[#2D3D2E] block"
                     initial={{ opacity: 0, y: -10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.3 }}
@@ -106,7 +106,7 @@ export function Countdown() {
                     {String(unit.value).padStart(2, '0')}
                   </motion.span>
                 </div>
-                <span className="font-[var(--font-cormorant-sc)] text-xs md:text-sm tracking-[0.2em] text-[#8A9A7C] mt-3 block uppercase">
+                <span className="font-[family-name:var(--font-cormorant-sc)] text-xs md:text-sm tracking-[0.2em] text-[#8A9A7C] mt-3 block uppercase">
                   {unit.label}
                 </span>
               </div>
@@ -115,7 +115,7 @@ export function Countdown() {
         </div>
 
         <motion.p
-          className="text-center mt-12 font-[var(--font-cormorant-sc)] text-base md:text-lg text-[#5A5A52] tracking-wide"
+          className="text-center mt-12 font-[family-name:var(--font-cormorant-sc)] text-base md:text-lg text-[#5A5A52] tracking-wide"
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : {}}
           transition={{ duration: 0.6, delay: 0.5 }}

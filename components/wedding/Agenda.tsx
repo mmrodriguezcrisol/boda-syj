@@ -139,10 +139,10 @@ function EventCard({ event, index }: { event: Event; index: number }) {
 
         {/* Title and time */}
         <div className="flex items-start justify-between gap-4 mb-4">
-          <h3 className="font-[var(--font-fraunces)] text-xl md:text-2xl text-[#2D3D2E]">
+          <h3 className="font-[family-name:var(--font-fraunces)] text-xl md:text-2xl text-[#2D3D2E]">
             {event.title}
           </h3>
-          <span className="font-[var(--font-fraunces)] text-2xl md:text-3xl text-[#A8533E] whitespace-nowrap">
+          <span className="font-[family-name:var(--font-fraunces)] text-2xl md:text-3xl text-[#A8533E] whitespace-nowrap">
             {event.time}
           </span>
         </div>
@@ -188,10 +188,10 @@ export function Agenda() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="font-[var(--font-cormorant-sc)] text-sm md:text-base tracking-[0.3em] text-[#8A9A7C] uppercase mb-4">
+          <h2 className="font-[family-name:var(--font-cormorant-sc)] text-sm md:text-base tracking-[0.3em] text-[#8A9A7C] uppercase mb-4">
             Agenda
           </h2>
-          <p className="font-[var(--font-fraunces)] text-3xl md:text-4xl text-[#2D3D2E]">
+          <p className="font-[family-name:var(--font-fraunces)] text-3xl md:text-4xl text-[#2D3D2E]">
             Nuestros Eventos
           </p>
         </motion.div>
