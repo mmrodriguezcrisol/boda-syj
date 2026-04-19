@@ -27,7 +27,7 @@ export function PhotoBreak({ imageIndex, overlay = 'sage' }: PhotoBreakProps) {
     ? 'bg-[#8A9A7C]/20' 
     : 'bg-[#A8533E]/15'
 
-  const photoUrl = photoUrls[imageIndex] || photoUrls[1]
+  const photoUrl = (photoData[imageIndex] ?? photoData[1]).url
 
   return (
     <section ref={ref} className="relative h-[50vh] md:h-[70vh] overflow-hidden">
