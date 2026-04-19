@@ -60,19 +60,6 @@ export function PhotoBreak({ imageIndex, overlay = 'sage' }: PhotoBreakProps) {
         </svg>
       </motion.div>
 
-      {/* Decorative monogram */}
-      <motion.div
-        className="absolute inset-0 flex items-center justify-center"
-        initial={{ opacity: 0, scale: 0.9 }}
-        animate={isInView ? { opacity: 1, scale: 1 } : {}}
-        transition={{ duration: 0.8 }}
-      >
-        <div className="text-center">
-          <span className="font-[var(--font-fraunces)] text-6xl md:text-8xl text-[#F6F4EE]/30">
-            S & J
-          </span>
-        </div>
-      </motion.div>
     </section>
   )
 }
