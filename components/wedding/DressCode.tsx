@@ -42,16 +42,6 @@ export function DressCode() {
           Elegante Sport
         </motion.h3>
 
-        {/* Description */}
-        <motion.p
-          className="text-lg md:text-xl text-[#5A5A52] leading-relaxed max-w-2xl mx-auto text-pretty"
-          initial={{ opacity: 0, y: 20 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, delay: 0.2 }}
-        >
-          Queremos que estés cómodo/a pero con un toque especial. 
-          Pensá en colores sobrios y telas elegantes, sin necesidad de vestimenta formal.
-        </motion.p>
       </div>
     </section>
   )
