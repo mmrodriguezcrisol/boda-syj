@@ -88,7 +88,7 @@ export function Gifts() {
           </p>
           
           <div className="flex items-center justify-center gap-4">
-            <span className="font-[family-name:var(--font-fraunces)] text-2xl md:text-3xl text-[#2D3D2E]">
+            <span className="font-mono text-xl md:text-2xl tracking-wide text-[#2D3D2E]">
               {ALIAS}
             </span>
             
