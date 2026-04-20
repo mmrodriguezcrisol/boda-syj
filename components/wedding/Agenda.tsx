@@ -21,7 +21,6 @@ interface Event {
   time: string
   venue: string
   address: string
-  coordinates: [number, number]
   parking?: boolean
   icon: React.ReactNode
 }
@@ -34,7 +33,6 @@ const events: Event[] = [
     time: '10:30',
     venue: 'Registro Civil de Vicente López',
     address: 'Juan de Garay 3161, Olivos, Buenos Aires',
-    coordinates: [-34.5108, -58.4862],
     icon: <Calendar className="w-5 h-5" />,
   },
   {
@@ -43,8 +41,7 @@ const events: Event[] = [
     date: 'Jueves 21 de Mayo',
     time: '17:10',
     venue: 'Templo de Buenos Aires',
-    address: 'AU Tte. Gral. Pablo Riccheri 4955, Ciudad Evita, Buenos Aires',
-    coordinates: [-34.7208, -58.5386],
+    address: 'AU Tte. Gral. Pablo Riccheri 4955, B1778 Ciudad Evita, Buenos Aires',
     parking: true,
     icon: <MapPin className="w-5 h-5" />,
   },
@@ -55,7 +52,6 @@ const events: Event[] = [
     time: '21:00',
     venue: 'Capilla de Vicente López',
     address: 'Hipólito Yrigoyen 1340, Vicente López, Buenos Aires',
-    coordinates: [-34.5275, -58.4720],
     parking: true,
     icon: <Clock className="w-5 h-5" />,
   },
@@ -104,9 +100,10 @@ function EventCard({ event, index }: { event: Event; index: number }) {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: '-50px' })
 
+  const mapQuery = `${event.venue}, ${event.address}`
   const googleMapsUrl = useMemo(() => {
-    return `https://www.google.com/maps/dir/?api=1&destination=${event.coordinates[0]},${event.coordinates[1]}`
-  }, [event.coordinates])
+    return `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(mapQuery)}`
+  }, [mapQuery])
 
   return (
     <motion.div
@@ -118,7 +115,7 @@ function EventCard({ event, index }: { event: Event; index: number }) {
     >
       {/* Map */}
       <div className="h-48 relative overflow-hidden">
-        <EventMap coordinates={event.coordinates} venue={event.venue} />
+        <EventMap query={mapQuery} venue={event.venue} />
       </div>
 
       {/* Content */}
