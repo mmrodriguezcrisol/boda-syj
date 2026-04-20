@@ -22,6 +22,7 @@ interface Event {
   venue: string
   address: string
   mapCoords?: [number, number]
+  arrivalNote?: string
   parking?: boolean
   icon: React.ReactNode
 }
@@ -31,18 +32,20 @@ const events: Event[] = [
     id: 'civil',
     title: 'Ceremonia Civil',
     date: 'Jueves 21 de Mayo',
-    time: '10:40',
+    time: '10:50',
     venue: 'Registro Civil de Vicente López',
     address: 'Juan de Garay 3161, Olivos, Buenos Aires',
+    arrivalNote: 'Llegar 10 minutos antes',
     icon: <Calendar className="w-5 h-5" />,
   },
   {
     id: 'temple',
     title: 'Sellamiento en el Templo',
     date: 'Jueves 21 de Mayo',
-    time: '17:00',
+    time: '17:10',
     venue: 'Templo de Buenos Aires',
     address: 'AU Tte. Gral. Pablo Riccheri 4955, B1778 Ciudad Evita, Buenos Aires',
+    arrivalNote: 'Llegar 10 minutos antes',
     parking: true,
     icon: <MapPin className="w-5 h-5" />,
   },
@@ -150,7 +153,14 @@ function EventCard({ event, index }: { event: Event; index: number }) {
 
         {/* Venue */}
         <p className="font-medium text-[#2D3D2E] mb-1">{event.venue}</p>
-        <p className="text-[#5A5A52] text-sm mb-6">{event.address}</p>
+        <p className="text-[#5A5A52] text-sm mb-4">{event.address}</p>
+
+        {event.arrivalNote && (
+          <div className="mb-6 inline-flex items-center gap-2 px-3 py-2 rounded-xl border border-amber-400 bg-amber-100 text-amber-900 text-sm font-medium">
+            <Clock className="w-4 h-4" />
+            {event.arrivalNote}
+          </div>
+        )}
 
         {/* Action button */}
         <a
