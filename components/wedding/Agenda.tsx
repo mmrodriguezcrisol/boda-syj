@@ -100,7 +100,7 @@ function EventCard({ event, index }: { event: Event; index: number }) {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: '-50px' })
 
-  const mapQuery = `${event.venue}, ${event.address}`
+  const mapQuery = event.address
   const googleMapsUrl = useMemo(() => {
     return `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(mapQuery)}`
   }, [mapQuery])

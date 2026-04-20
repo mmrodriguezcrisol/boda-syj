@@ -6,7 +6,7 @@ interface EventMapProps {
 }
 
 export function EventMap({ query, venue }: EventMapProps) {
-  const src = `https://www.google.com/maps?q=${encodeURIComponent(query)}&z=16&output=embed`
+  const src = `https://maps.google.com/maps?q=${encodeURIComponent(query)}&t=m&z=16&ie=UTF8&iwloc=&output=embed`
   return (
     <iframe
       src={src}
