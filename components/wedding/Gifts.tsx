@@ -64,7 +64,7 @@ export function Gifts() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.1 }}
         >
-          Su presencia es nuestro mejor regalo
+          Tu presencia es nuestro mejor regalo
         </motion.p>
 
         <motion.p
@@ -73,7 +73,7 @@ export function Gifts() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          Si además quieren acompañarnos con una contribución para nuestra luna de miel y los gastos del matrimonio, lo vamos a recibir con muchísimo cariño.
+          Si además querés acompañarnos con una contribución para nuestra luna de miel y los gastos del matrimonio, lo vamos a recibir con muchísimo cariño.
         </motion.p>
 
         {/* Alias box */}
