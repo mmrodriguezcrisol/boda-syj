@@ -61,21 +61,6 @@ export function Countdown() {
       </div>
 
       <div className="relative z-10 max-w-4xl mx-auto px-6">
-        {/* Date display */}
-        <motion.div
-          className="text-center mb-8"
-          initial={{ opacity: 0, y: 20 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
-        >
-          <h2 className="font-[family-name:var(--font-fraunces)] text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#2D3D2E] mb-2">
-            21 y 22 de Mayo
-          </h2>
-          <span className="font-[family-name:var(--font-cormorant-sc)] text-xl md:text-2xl text-[#A8533E] tracking-[0.3em]">
-            2026
-          </span>
-        </motion.div>
-
         <motion.h3
           className="text-center font-[family-name:var(--font-cormorant-sc)] text-sm md:text-base tracking-[0.3em] text-[#8A9A7C] uppercase mb-12"
           initial={{ opacity: 0, y: 20 }}
