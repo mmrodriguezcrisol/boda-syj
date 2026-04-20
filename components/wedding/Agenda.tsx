@@ -48,7 +48,7 @@ const events: Event[] = [
   },
   {
     id: 'reception',
-    title: 'Fiesta de Casamiento',
+    title: 'Recepción de Boda',
     date: 'Viernes 22 de Mayo',
     time: '21:00',
     venue: 'Capilla de Vicente López',
