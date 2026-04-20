@@ -46,7 +46,7 @@ const events: Event[] = [
     venue: 'Templo de Buenos Aires',
     address: 'AU Tte. Gral. Pablo Riccheri 4955, B1778 Ciudad Evita, Buenos Aires',
     parking: true,
-    icon: <MapPin className="w-5 h-5" />,
+    icon: <Calendar className="w-5 h-5" />,
   },
   {
     id: 'reception',
@@ -57,7 +57,7 @@ const events: Event[] = [
     address: 'Hipólito Yrigoyen 1340, Vicente López, Buenos Aires',
     mapCoords: [-34.5205034, -58.4839649],
     parking: true,
-    icon: <Clock className="w-5 h-5" />,
+    icon: <Calendar className="w-5 h-5" />,
   },
 ]
 
