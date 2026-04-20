@@ -21,6 +21,7 @@ interface Event {
   time: string
   venue: string
   address: string
+  mapCoords?: [number, number]
   parking?: boolean
   icon: React.ReactNode
 }
@@ -52,6 +53,7 @@ const events: Event[] = [
     time: '21:00',
     venue: 'Capilla de Vicente López',
     address: 'Hipólito Yrigoyen 1340, Vicente López, Buenos Aires',
+    mapCoords: [-34.5205034, -58.4839649],
     parking: true,
     icon: <Clock className="w-5 h-5" />,
   },
@@ -100,7 +102,9 @@ function EventCard({ event, index }: { event: Event; index: number }) {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: '-50px' })
 
-  const mapQuery = event.address
+  const mapQuery = event.mapCoords
+    ? `${event.mapCoords[0]},${event.mapCoords[1]}`
+    : event.address
   const googleMapsUrl = useMemo(() => {
     return `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(mapQuery)}`
   }, [mapQuery])
