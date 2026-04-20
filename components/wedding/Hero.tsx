@@ -48,7 +48,7 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <span className="font-[family-name:var(--font-cormorant-sc)] text-sm md:text-base tracking-[0.4em] text-[#F6F4EE] uppercase drop-shadow-[0_2px_6px_rgba(0,0,0,0.5)]">
-            Save the Date
+            Reserva la Fecha
           </span>
         </motion.div>
 
