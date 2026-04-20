@@ -45,7 +45,6 @@ const events: Event[] = [
     time: '17:10',
     venue: 'Templo de Buenos Aires',
     address: 'AU Tte. Gral. Pablo Riccheri 4955, B1778 Ciudad Evita, Buenos Aires',
-    arrivalNote: 'Llegar 10 minutos antes',
     parking: true,
     icon: <MapPin className="w-5 h-5" />,
   },
