@@ -55,7 +55,6 @@ const events: Event[] = [
     time: '21:00',
     venue: 'El Plata Tenis Club',
     address: 'Carlos Pellegrini 2665, B1640 Martínez, Buenos Aires',
-    parking: true,
     icon: <Calendar className="w-5 h-5" />,
   },
 ]
