@@ -53,9 +53,8 @@ const events: Event[] = [
     title: 'Recepción de Boda',
     date: 'Viernes 22 de Mayo',
     time: '21:00',
-    venue: 'Capilla de Vicente López',
-    address: 'Hipólito Yrigoyen 1340, Vicente López, Buenos Aires',
-    mapCoords: [-34.5205034, -58.4839649],
+    venue: 'El Plata Tenis Club',
+    address: 'Carlos Pellegrini 2665, B1640 Martínez, Buenos Aires',
     parking: true,
     icon: <Calendar className="w-5 h-5" />,
   },
@@ -106,7 +105,7 @@ function EventCard({ event, index }: { event: Event; index: number }) {
 
   const mapQuery = event.mapCoords
     ? `${event.mapCoords[0]},${event.mapCoords[1]}`
-    : event.address
+    : `${event.venue}, ${event.address}`
   const googleMapsUrl = useMemo(() => {
     return `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(mapQuery)}`
   }, [mapQuery])
